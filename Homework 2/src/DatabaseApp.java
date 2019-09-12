@@ -1,3 +1,4 @@
-interface DatabaseApp { void store(); }
-
-
+interface DatabaseApp
+{
+    void store();
+}

@@ -1,12 +1,13 @@
 public class Main {
     public static void main(String args[])
     {
-        System.out.println("Hi!");
+        DBTool database = new DBTool(new RelationalDB());
+
         RelationalDB rdb = new RelationalDB();
         NoSQLDB ndb = new NoSQLDB();
         GraphDB gdb = new GraphDB();
 
-        rdb.store();
+        database.performStore();
         ndb.store();
         gdb.store();
 
