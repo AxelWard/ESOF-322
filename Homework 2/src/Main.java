@@ -1,15 +1,26 @@
 public class Main {
     public static void main(String args[])
     {
+        System.out.println("Please select a Database Software!");
+        System.out.println("...");
+        System.out.println("You have selected to store your data using a Relational Database!");
         DBTool database = new DBTool(new RelationalDB());
 
-        RelationalDB rdb = new RelationalDB();
-        NoSQLDB ndb = new NoSQLDB();
-        GraphDB gdb = new GraphDB();
+        database.performStore("Relational Data");
 
-        database.performStore();
-        ndb.store();
-        gdb.store();
+        System.out.println("We are going to back your data up in a NoSQLDB as well!");
+
+        database.setStoreStrategy(new GraphDB());
+
+        database.performStore("Graph Data");
+
+        System.out.println("*****Verification the graph database works independently*****");
+
+        NoSQLDB ndb = new NoSQLDB();
+
+
+//        ndb.store();
+        ndb.store("NoSQL Data");
 
     }
 }

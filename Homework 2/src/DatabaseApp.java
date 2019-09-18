@@ -1,4 +1,4 @@
 interface DatabaseApp
 {
-    void store();
+    void store(String str);
 }

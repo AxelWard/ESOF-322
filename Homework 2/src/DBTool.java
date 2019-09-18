@@ -4,16 +4,18 @@ public class DBTool
 
     DBTool(DatabaseApp da)
     {
+        System.out.println("A Database tool has been created with the strategy "+ da);
         A = da;
     }
 
-    public void performStore()
+    public void performStore(String str)
     {
-        this.A.store();
+        this.A.store(str);
     }
 
-    public void setDatabase(DatabaseApp a)
+    public void setStoreStrategy(DatabaseApp a)
     {
+        System.out.println("Calling setStoreStrategy to change the Database Tool's strategy to " + a);
         this.A = a;
     }
 }
