@@ -19,4 +19,9 @@ public class RelationalDB implements DatabaseApp
         }
         System.out.println("We have stored the data in the Relational Database using Table Store.");
     }
+
+    public String getType()
+    {
+        return "Relational Database";
+    }
 }

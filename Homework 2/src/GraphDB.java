@@ -19,4 +19,9 @@ public class GraphDB implements DatabaseApp
         }
         System.out.println("We have stored the data in the Graph Database using Node Store.");
     }
+
+    public String getType()
+    {
+        return "Graph Database";
+    }
 }

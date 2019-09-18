@@ -20,4 +20,9 @@ public class NoSQLDB implements DatabaseApp
         }
         System.out.println("We have stored the data in the NoSQL Database using document store.");
     }
+
+    public String getType()
+    {
+        return "NoSQL Database";
+    }
 }
