@@ -9,4 +9,9 @@ public class GraphDB implements DatabaseApp
     {
         System.out.println("Uses Node Store.");
     }
+
+    public String getType()
+    {
+        return("GraphDB");
+    }
 }

@@ -9,4 +9,8 @@ public class NoSQLDB implements DatabaseApp
     {
         System.out.println("Uses document store.");
     }
+
+    public String getType() {
+        return ("NoSQLDB");
+    }
 }

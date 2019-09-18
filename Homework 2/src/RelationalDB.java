@@ -9,4 +9,9 @@ public class RelationalDB implements DatabaseApp
     {
         System.out.println("Uses Table Store.");
     }
+
+    public String getType()
+    {
+        return("RelationalDB");
+    }
 }

@@ -15,5 +15,6 @@ public class DBTool
     public void setDatabase(DatabaseApp a)
     {
         this.A = a;
+        System.out.println("Database is now " + a.getType());
     }
 }
