@@ -4,7 +4,7 @@ public class DBTool
 
     DBTool(DatabaseApp da)
     {
-        System.out.println("A Database tool has been created with the strategy "+ da.getType());
+        System.out.println("A Database tool has been created");
         A = da;
     }
 
